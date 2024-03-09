@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://pro.fontawesome.com/releases/v5.15.4/css/all.css" rel="stylesheet" />
+    <title>Movie & Shows</title>
+</head>
+
+<body>
+    <nav>
+        <h1>Prime Shows</h1>
+        <ul>
+            <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+            <li><a href="Movie.html"><i class="fas fa-popcorn"></i> Movies</a></li>
+            <li><a href="series.html"><i class="fas fa-projector"></i>Book Now</a></li>
+            <li><a href="cartoon.html"><i class="fas fa-dog"></i> Cartoon</a></li>
+            <li><a href="Tv_show.html"><i class="far fa-tv-retro"></i> TV Shows</a></li>
+            <li><a href="collections.html">Collection</a></li>
+
+        </ul>
+        <button onclick="login()">Login</button>
+    </nav>
+    <main>
+        <!--radio button-->
+        <input type="radio" name="slider" id="slide1" checked>
+        <input type="radio" name="slider" id="slide2">
+        <input type="radio" name="slider" id="slide3">
+        <input type="radio" name="slider" id="slide4">
+        <input type="radio" name="slider" id="slide5">
+        <input type="radio" name="slider" id="slide6">
+
+        <div class="slider">
+            <img src="https://wallpapercave.com/wp/wp4166602.jpg" class="slide" alt="1">
+            <img src="https://wallpapercosmos.com/w/full/c/0/4/1246531-3840x2160-desktop-4k-serving-sara-movie-wallpaper.jpg"
+                class="slide" alt="2">
+            <img src="https://v3img.voot.com/jioimage/12/26/8a0e8f3374c811e688d58522ba040c22_1582111969083_l.jpg" class="slide" alt="3">
+            <img src="https://images.bauerhosting.com/legacy/media/5e67/b246/f8dd/0334/d074/3d80/26-up.jpg?auto=format&w=1440&q=80"
+                class="slide" alt="4">
+            <img src="https://wallpapers.com/images/hd/despicable-me-2-movie-poster-xerdumsy6u14r6ua.jpg"
+                class="slide" alt="5">
+            <img src="https://www.teahub.io/photos/full/66-663989_rowan-atkinson-in-mr-mr-beans-holiday-2007.jpg"
+                class="slide" alt="6">
+        </div>
+        <div class="nav">
+            <label for="slide1"></label>
+            <label for="slide2"></label>
+            <label for="slide3"></label>
+            <label for="slide4"></label>
+            <label for="slide5"></label>
+            <label for="slide6"></label>
+        </div>
+    </main>
+
+    <!--javascript-->
+    <script>
+        const radioButtons = document.querySelectorAll('input[type="radio"]');
+        const slides = document.querySelectorAll('.slide');
+        let currentIndex = 0;
+        let interval;
+
+        function showSlide(index) {
+            radioButtons[currentIndex].checked = false;
+
+            //   select slide and check the radio button
+            slides[index].style.display = 'block';
+            radioButtons[index].checked = true;
+
+            // to Hide  
+            slides.forEach((slide, slideIndex) => {
+                if (slideIndex !== index) {
+                    slide.style.display = 'none';
+                }
+            });
+
+            currentIndex = index;
+        }
+
+        function startAutoSlide() {
+            interval = setInterval(() => {
+                const nextIndex = (currentIndex + 1) % radioButtons.length;
+                showSlide(nextIndex);
+            }, 3000); // time change
+        }
+
+        function stopAutoSlide() {
+            clearInterval(interval);
+        }
+
+
+        radioButtons.forEach((radioButton, index) => {
+            radioButton.addEventListener('change', () => {
+                showSlide(index);
+                stopAutoSlide();
+            });
+        });
+
+        // start automatic sliding
+        startAutoSlide();
+    </script>
+
+
+
+
+
+
+    <!--Movies-->
+    <section class="movies" id="opening-this-week" style="overflow: scroll;">
+        <!--Movies container-->
+        <div class="movies-container">
+            <!--Box 1-->
+            <div class="box">
+                <div class="box-img">
+                    <img src="https://wallpapercave.com/wp/wp4166602.jpg " alt="1">
+                </div>
+                <h3>Venom</h3>
+                <span>120 min | Action</span>
+            </div>
+            <!--Box 2-->
+            <div class="box">
+                <div class="box-img">
+                    <img src="https://wallpapercave.com/dwp2x/wp6626763.jpg" alt="2">
+                </div>
+                <h3>Rockstar</h3>
+                <span>120 min | Love story</span>
+            </div>
+            <!--Box 3-->
+            <div class="box">
+                <div class="box-img">
+                    <img src="https://wallpapercave.com/dwp2x/wp8074196.jpg" alt="3">
+                </div>
+                <h3>Anjana Anjani</h3>
+                <span>120 min | Love story</span>
+            </div>
+            <!--Box 4-->
+            <div class="box">
+                <div class="box-img">
+                    <img src="https://cdn.wallpapersafari.com/76/85/fFsbXB.jpg" alt="4">
+                </div>
+                <h3>Avatar</h3>
+                <span>120 min | Thrill</span>
+            </div>
+            <!--Box 5-->
+            <div class="box">
+                <div class="box-img">
+                    <img src="https://wallpapercave.com/wp/wp9068304.jpg" alt="5">
+                </div>
+                <h3>Welcom to new york</h3>
+                <span>120 min | Comedy</span>
+            </div>
+            <!--Box 6-->
+            <div class="box">
+                <div class="box-img">
+                    <img src="https://wallpapercave.com/wp/wp8391246.jpg" alt="6">
+                </div>
+                <h3>Fukrey Returns</h3>
+                <span>120 min | Comedy</span>
+            </div>
+            <!--Box 7-->
+            <div class="box">
+                <div class="box-img">
+                    <img src="https://media.harrypotterfanzone.com/harry-potter-movie-posters-header.jpg" alt="7">
+                </div>
+                <h3>Harry Potter</h3>
+                <span>120 min | Action</span>
+            </div>
+        </div>
+    </section>
+
+
+    <!--Movies line 2-->
+    <section class="movies" id="opening-this-week" style="overflow: scroll;">
+        <!--Movies container-->
+        <div class="movies-container">
+            <!--Box 1-->
+            <div class="box">
+                <div class="box-img">
+                    <img src="https://akamaividz2.zee5.com/image/upload/w_1170,h_658,c_scale,f_webp,q_auto:eco/resources/0-0-movie_1094544714/list/RamaiyaVastavaiya740x41609d2282d716443f8b0add976d842e19d.jpg" alt="1">
+                </div>
+                <h3>Ramaiya Vastavaiya</h3>
+                <span>120 min | Love Story</span>
+            </div>
+            <!--Box 2-->
+            <div class="box">
+                <div class="box-img">
+                    <img src="https://www.radiocity.in/images/uploads/news-fukrey3091123_d.jpg" alt="2">
+                </div>
+                <h3>Fukery 3</h3>
+                <span>120 min | Comedy</span>
+            </div>
+            <!--Box 3-->
+            <div class="box">
+                <div class="box-img">
+                    <img src="https://wallpapers.oneindia.com/ph-1024x768/2014/09/happy-new-year-wallpaper_140981596200.jpg" alt="3">
+                </div>
+                <h3>Happy New Year</h3>
+                <span>120 min | </span>
+            </div>
+            <!--Box 4-->
+            <div class="box">
+                <div class="box-img">
+                    <img src="https://akamaividz2.zee5.com/image/upload/w_1170,h_658,c_scale,f_webp,q_auto:eco/resources/0-0-2459/list/002459list1060863485.jpg" alt="4">
+                </div>
+                <h3>Supar Nani</h3>
+                <span>120 min | Drama</span>
+            </div>
+            <!--Box 5-->
+            <div class="box">
+                <div class="box-img">
+                    <img src="https://c4.wallpaperflare.com/wallpaper/153/691/624/movies-bollywood-movies-wallpaper-thumb.jpg" alt="5">
+                </div>
+                <h3>Jab Tak HAi Jaan</h3>
+                <span>120 min | Love Story</span>
+            </div>
+            <!--Box 6-->
+            <div class="box">
+                <div class="box-img">
+                    <img src="https://i.ytimg.com/vi/LuUNqgqhUgs/maxresdefault.jpg" alt="6">
+                </div>
+                <h3>Don 3</h3>
+                <span>120 min | Action</span>
+            </div>
+            <!--Box 7-->
+            <div class="box">
+                <div class="box-img">
+                    <img src="https://www.bananaip.com/wp-content/uploads/2010/01/3-idiots-sequel-1.jpg" alt="7">
+                </div>
+                <h3>3 idiots</h3>
+                <span>120 min | Comedy</span>
+            </div>
+        </div>
+    </section>
+
+    <!--d Movie play-->
+    <section class="movies" id="new-releases" style="overflow: scroll;">
+        <div class="movies-container">
+            <table>
+                <tr>
+                    <td>
+                        <video width=" 495" height="300" controls>
+                            <source src="C:\Users\ASUS\Downloads\DREAM GIRL 2.mp4" type="video/mp4"
+                                poster="C:\Users\ASUS\OneDrive\Desktop\dreamG.jpg">
+                        </video>
+                        <h3 style="color: aliceblue;">Dream Girl</h3>
+                        <span style="color: aliceblue;">120 min | Comedy</span>
+                    </td>
+                    <td>
+                        <video width=" 495" height="300" controls>
+                            <source src="C:\Users\ASUS\Downloads\Tiger 3.mp4" type="video/mp4" poster="thumbnail.jpg">
+                        </video>
+                        <h3 style="color: aliceblue;">Tiger 3</h3>
+                        <span style="color: aliceblue;">120 min | Action</span>
+                    </td>
+                    <td>
+                        <video width=" 495" height="300" controls>
+                            <source src="C:\Users\ASUS\Downloads\ANIMAL.mp4" type="video/mp4" poster="thumbnail.jpg">
+                        </video>
+                        <h3 style="color: aliceblue;">Animal</h3>
+                        <span style="color: aliceblue;">120 min | Crime</span>
+                    </td>
+                    <td>
+                        <video width=" 495" height="300" controls>
+                            <source src="C:\Users\ASUS\Downloads\Welcome to New York.mp4" type="video/mp4"
+                                poster="thumbnail.jpg">
+                        </video>
+                        <h3 style="color: aliceblue;">Welcom To New York</h3>
+                        <span style="color: aliceblue;">120 min | Comedy</span>
+                    </td>
+                    <td>
+                        <video width=" 495" height="300" controls>
+                            <source src="C:\Users\ASUS\Downloads\Sherlock The Curse of Bhaskarvilla.mp4"
+                                type="video/mp4" poster="thumbnail.jpg">
+                        </video>
+                        <h3 style="color: aliceblue;">Sherlock</h3>
+                        <span style="color: aliceblue;">120 min | Thrill</span>
+                    </td>
+                    <td>
+                        <video width=" 495" height="300" controls>
+                            <source src="C:\Users\ASUS\Downloads\Maidaan.mp4" type="video/mp4" poster="thumbnail.jpg">
+                        </video>
+                        <h3 style="color: aliceblue ;">Maidaan</h3>
+                        <span style="color: aliceblue;">120 min | Action</span>
+                    </td>
+                    <td>
+                        <video width=" 495" height="300" controls>
+                            <source src="C:\Users\ASUS\Downloads\Fukrey 3.mp4" type="video/mp4" poster="thumbnail.jpg">
+                        </video>
+                        <h3 style="color: aliceblue;">Fukrey</h3>
+                        <span style="color: aliceblue;">120 min | Comedy</span>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script>
+        function login() {
+            window.open("login.html");
+        }
+        //  javascript Swiper slider
+        var swiper = new Swiper('.swiper-container', {
+        });
+    </script>
+
+</body>
+
+</html>

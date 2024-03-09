@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>T.V Shows</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://pro.fontawesome.com/releases/v5.15.4/css/all.css" rel="stylesheet" />
+    <style>
+        @import url("https://fonts.googleapis.com/css2?family=Agbalumo&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;1,100;1,200;1,300;1,400&display=swap");
+        @import url("https://fonts.googleapis.com/css2?family=Noto+Sans:wght@100&display=swap");
+
+        * {
+            font-family: Arial, sans-serif;
+            background-color: #151515;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 5px 50px;
+            border-bottom: 1px #cccccc11 solid;
+            background: #151515;
+            box-shadow:
+                5px 5px 6px #090909,
+                -5px -5px 6px #212121;
+            animation: slideFromTopToBottom 1s ease;
+        }
+
+        .navbar a {
+            text-decoration: none;
+            color: rgb(19, 18, 18);
+            font-size: 20px;
+            font-weight: bold;
+            padding: 10px 15px;
+            border-radius: 5px;
+        }
+
+        .navbar a:hover {
+            background-color: rgb(231, 7, 7);
+            color: white;
+        }
+
+        h1 {
+            color: #ff3c37;
+            font-family: "Poppins", sans-serif;
+            font-weight: 600;
+            font-size: 32px;
+            animation: blink_text 2s infinite;
+        }
+        h2 {
+            color: aliceblue;
+        }
+
+        ul {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 20px;
+            list-style: none;
+            color: #fff;
+            font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+        }
+
+        ul li {
+            font-size: 17px;
+        }
+
+        ul li a {
+            color: #fff;
+            text-decoration: none;
+            transition-duration: 0.6s;
+        }
+
+        ul li a:hover {
+            color: #f5f3f1;
+        }
+
+        ul li a i {
+            animation: slideFromTopToBottom 2s ease;
+            color: #ff3c37;
+            transition-duration: 0.6s;
+        }
+
+        ul li a:hover i {
+            color: #fff;
+        }
+            
+        
+
+
+        button {
+            background-color: #ff3c37;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 22px;
+            color: #fff;
+            font-weight: 600;
+            letter-spacing: 2px;
+            animation: slideFromTopToBottom 2s ease;
+
+            box-shadow:
+                5px 5px 10px #080808,
+                -5px -5px 10px #222222;
+            transition-duration: 0.6s;
+
+            &:hover {
+                background-color: #fff;
+                color: #ff3c37;
+                box-shadow: none;
+                cursor: pointer;
+            }
+        }
+
+
+
+        @keyframes blink_text {
+            0% {
+                text-shadow: #ff3e3780 -2px 2px 10px;
+            }
+
+            50% {
+                text-shadow: #ff3e37d1 -2px 2px 10px;
+            }
+
+            100% {
+                text-shadow: #ff3e377d -2px 2px 10px;
+            }
+        }
+
+        @keyframes slideFromTopToBottom {
+            0% {
+                transform: translateY(-100%);
+            }
+
+            100% {
+                transform: translateY(0);
+            }
+            
+        }
+        .image-item {
+            width: 400px;
+            margin: 20px;
+            background-color: white;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+        }
+
+        .image {
+            max-width: 100%;
+            height: 100%;
+        }
+        .image-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .btn {
+            display: block;
+            text-align: center;
+            margin-left: 500px;
+            margin-top: 100px;
+            text-decoration: none;
+            width: 150px;
+            height: 40px;
+            background-color: Red;
+            color: white;
+            line-height: 40px;
+            border: none;
+            border-radius: 5px;
+        }
+
+        .btn:hover {
+            background: rgb(5, 241, 60);
+        }
+        p{
+            margin-top: 100px;
+            color: #f5f3f1;
+            margin-left: 30px;
+
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <h1>Prime Shows</h1>
+        <ul>
+            <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+            <li><a href="Movie.html"><i class="fas fa-popcorn"></i> Movies</a></li>
+            <li><a href="series.html"><i class="fas fa-projector"></i>Book Now</a></li>
+            <li><a href="cartoon.html"><i class="fas fa-dog"></i> Cartoon</a></li>
+            <li><a href="Tv_show.html"><i class="far fa-tv-retro"></i> TV Shows</a></li>
+            <li><a href="collections.html">Collection</a></li>
+             
+        </ul>
+    </nav>
+     
+
+    <div class="image-container">
+        <div class="image-item">
+            <img src="https://resize.indiatvnews.com/en/resize/newbucket/1200_-/2018/01/secret-superstar-review-sto-647-101817010819-1516277316.jpg"
+                alt="Image 1" class="image">
+        </div>
+       <p><b>Secret Superstar</b></p>
+
+        <a href="about.html" class="btn">Book Now</a>
+    </div>
+    <div class="image-container">
+        <div class="image-item">
+            <img src="https://images.hindustantimes.com/rf/image_size_630x354/HT/p2/2017/08/10/Pictures/shraddha-kapoor-haseena-brother-sidhanth-poster-parker_c947f584-7dd1-11e7-a713-31f90463e8eb.jpg" alt="Image 1"
+                class="image">
+        </div>
+        <p><b> Haseena Parkar </b></p>
+        <a href="about.html" class="btn">Book Now</a>
+    </div>
+    <div class="image-container">
+        <div class="image-item">
+            <img src="https://c4.wallpaperflare.com/wallpaper/47/548/988/game-of-thrones-poster-movie-wallpaper-preview.jpg" alt="Image 1"
+                class="image"  >
+        </div>
+        <p style="font-size: 25px;">The Meg 2</p>
+        <a href="about.html" class="btn">Book Now</a>
+    </div>
+    <div class="image-container">
+        <div class="image-item">
+            <img src="https://m.media-amazon.com/images/I/91xO-+oICbL.jpg"
+                alt="Image 1" class="image">
+        </div>
+        <p style="font-size: 25px;">The Hobbit</p>
+        <a href="about.html" class="btn">Book Now</a>
+    </div>
+
+</body>
+
+</html>

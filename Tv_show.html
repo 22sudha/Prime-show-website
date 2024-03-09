@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>T.V Shows</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://pro.fontawesome.com/releases/v5.15.4/css/all.css" rel="stylesheet" />
+    <style>
+        @import url("https://fonts.googleapis.com/css2?family=Agbalumo&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;1,100;1,200;1,300;1,400&display=swap");
+        @import url("https://fonts.googleapis.com/css2?family=Noto+Sans:wght@100&display=swap");
+
+        * {
+            font-family: Arial, sans-serif;
+            background-color: #151515;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 5px 50px;
+            border-bottom: 1px #cccccc11 solid;
+            background: #151515;
+            box-shadow:
+                5px 5px 6px #090909,
+                -5px -5px 6px #212121;
+            animation: slideFromTopToBottom 1s ease;
+        }
+
+        .navbar a {
+            text-decoration: none;
+            color: rgb(19, 18, 18);
+            font-size: 20px;
+            font-weight: bold;
+            padding: 10px 15px;
+            border-radius: 5px;
+        }
+
+        .navbar a:hover {
+            background-color: rgb(231, 7, 7);
+            color: white;
+        }
+
+        h1 {
+            color: #ff3c37;
+            font-family: "Poppins", sans-serif;
+            font-weight: 600;
+            font-size: 32px;
+            animation: blink_text 2s infinite;
+        }
+
+        h2 {
+            color: aliceblue;
+        }
+
+        ul {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 20px;
+            list-style: none;
+            color: #fff;
+            font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+        }
+
+        ul li {
+            font-size: 17px;
+        }
+
+        ul li a {
+            color: #fff;
+            text-decoration: none;
+            transition-duration: 0.6s;
+        }
+
+        ul li a:hover {
+            color: #f5f3f1;
+        }
+
+        ul li a i {
+            animation: slideFromTopToBottom 2s ease;
+            color: #ff3c37;
+            transition-duration: 0.6s;
+        }
+
+        ul li a:hover i {
+            color: #fff;
+        }
+            
+        
+
+
+        button {
+            background-color: #ff3c37;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 22px;
+            color: #fff;
+            font-weight: 600;
+            letter-spacing: 2px;
+            animation: slideFromTopToBottom 2s ease;
+
+            box-shadow:
+                5px 5px 10px #080808,
+                -5px -5px 10px #222222;
+            transition-duration: 0.6s;
+
+            &:hover {
+                background-color: #fff;
+                color: #ff3c37;
+                box-shadow: none;
+                cursor: pointer;
+            }
+        }
+
+
+
+        @keyframes blink_text {
+            0% {
+                text-shadow: #ff3e3780 -2px 2px 10px;
+            }
+
+            50% {
+                text-shadow: #ff3e37d1 -2px 2px 10px;
+            }
+
+            100% {
+                text-shadow: #ff3e377d -2px 2px 10px;
+            }
+        }
+
+        @keyframes slideFromTopToBottom {
+            0% {
+                transform: translateY(-100%);
+            }
+
+            100% {
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <h1>Prime Shows</h1>
+        <ul>
+            <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+            <li><a href="Movie.html"><i class="fas fa-popcorn"></i> Movies</a></li>
+            <li><a href="series.html"><i class="fas fa-projector"></i> Book Now</a></li>
+            <li><a href="cartoon.html"><i class="fas fa-dog"></i> Cartoon</a></li>
+            <li><a href="Tv_show.html"><i class="far fa-tv-retro"></i> TV Shows</a></li>
+            <li><a href="collections.html">Collection</a></li>
+             
+        </ul>
+    </nav>
+    <h2>Tarak Metha ka Ulta Chashma</h2>
+    <table>
+        <tr>
+            <td>
+                <embed width="250" height="auto" src="https://www.youtube.com/embed/pI-WuhNn8ZM?si=FKvRqftOvVTJC2Or"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen></embed>
+            </td>
+            <td>
+                <embed width="250" height="auto" src="https://www.youtube.com/embed/4Rb_p_Kb2Lo?si=4QDMDJoRsOepZBpt"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen></embed>
+            </td>
+            <td>
+                <embed width="250" height="auto" src="https://www.youtube.com/embed/4tY59J0i0C4?si=0NCB9-vcj6en0KjQ"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen></embed>
+            </td>
+            <td>
+                <embed width="250" height="auto" src="https://www.youtube.com/embed/llGZsjiIBf0?si=wdtor4qvm2yCvrne"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen></embed>
+            </td>
+            <td>
+                <embed width="250" height="auto" src="https://www.youtube.com/embed/FOtrb8GUfz4?si=cVbzAkYSmhPZcUgM"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen></embed>
+            </td>
+            <td>
+                <embed width="250" height="auto" src="https://www.youtube.com/embed/7wLuN5dmj_g?si=7t8rhqNKEGbRJm79"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen></embed>
+            </td>
+        </tr>
+    </table>
+    <h2> Bhabhi Ji Ghar Par Hai</h2>
+    <table>
+        <tr>
+            <td>
+                <embed width="250" height="auto" src="https://www.youtube.com/embed/pPjTJ9bjMAw?si=A_ybENi0zcLPaXd_" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></embed>
+            </td>
+            <td>
+                <embed width="250" height="auto" src="https://www.youtube.com/embed/--Mr2zXARHM?si=2OL8AhJtOkPEucy1"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen></embed>
+            </td>
+            <td>
+                <embed width="250" height="auto" src="https://www.youtube.com/embed/s1xquFj4SuU?si=tfYeiIcvPCDD-aLM"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen></embed>
+            </td>
+            <td>
+                <embed width="250" height="auto" src="https://www.youtube.com/embed/M3HDc1sR-dk?si=Gok7MVakKpLy1Lcl"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen></embed>
+            </td>
+            <td>
+                <embed width="250" height="auto" src="https://www.youtube.com/embed/FiU24mPRX3w?si=1Q8ZZFIvmJpW7agh"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen></embed>
+            </td>
+            <td>
+                <embed width="250" height="auto" src="https://www.youtube.com/embed/D6zNsv8yz0k?si=li4up4l8r-Evq4Sx"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen></embed>
+            </td>
+        </tr>
+    </table>
+    <h2>Master Chef</h2>
+    <table>
+        <tr>
+            <td>
+                <embed width="250" height="auto" src="https://www.youtube.com/embed/Gj0GxQsoR1A?si=l2DyHkTm4uPdOVtJ"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen></embed>
+            </td>
+            <td>
+                <embed width="250" height="auto" src="https://www.youtube.com/embed/WhkQRBvIt9A?si=nYmWaVvpdNt8wAnr"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen></embed>
+            </td>
+            <td>
+                <embed width="250" height="auto" src="https://www.youtube.com/embed/2N3qNRWC5N8?si=BZDLcMLm0CtWPQ8d"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen></embed>
+            </td>
+            <td>
+                <embed width="250" height="auto" src="https://www.youtube.com/embed/UbuycT6Xrl0?si=ENXxwsLZdnv-nOzv"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen></embed>
+            </td>
+            <td>
+                <embed width="250" height="auto" src="https://www.youtube.com/embed/WNxBvM9zoVE?si=Uzbq3NbTCgdvCDVv"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen></embed>
+            </td>
+            <td>
+                <embed width="250" height="auto" src="https://www.youtube.com/embed/O8QrZ-9uOXc?si=QPv1PRs9X8uYM4SY"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen></embed>
+            </td>
+        </tr>
+    </table>
+    <h2>KBC</h2>
+    <table>
+        <tr>
+            <td>
+                <embed width="250" height="auto" src="https://www.youtube.com/embed/qN2WoU81EIc?si=aSzExzgsp1yagqfo"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen></embed>
+            </td>
+            <td>
+                <embed width="250" height="auto" src="https://www.youtube.com/embed/S9IXTjbyizQ?si=EnXZoEGGLbf-FmQS"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen></embed>
+            </td>
+            <td>
+                <embed width="250" height="auto" src="https://www.youtube.com/embed/P5eDFfdz1Eo?si=GdbW4YKL6E7tNUL1"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen></embed>
+            </td>
+            <td>
+                <embed width="250" height="auto" src="https://www.youtube.com/embed/UMkHFc3RXNU?si=pc3C9I_g1mvUqFlr"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen></embed>
+            </td>
+            <td>
+                <embed width="250" height="auto" src="https://www.youtube.com/embed/OnboZrLe4I8?si=n8ssAIvydWQXK9de"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen></embed>
+            </td>
+            <td>
+                <embed width="250" height="auto" src="https://www.youtube.com/embed/KMdc-X-B17g?si=g6w6eJJKABb32LuE"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen></embed>
+            </td>
+        </tr>
+    </table>
+</body>
+
+</html>
